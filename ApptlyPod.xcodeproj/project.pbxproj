@@ -16,6 +16,17 @@
 		5D17D4861B437D290052C7BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D17D4851B437D290052C7BE /* Images.xcassets */; };
 		5D17D4891B437D290052C7BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D17D4871B437D290052C7BE /* LaunchScreen.xib */; };
 		5D17D4951B437D290052C7BE /* ApptlyPodTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4941B437D290052C7BE /* ApptlyPodTests.m */; };
+		5D17D4A01B438B6F0052C7BE /* ThemeItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D49F1B438B6F0052C7BE /* ThemeItem.m */; };
+		5D17D4A31B438B700052C7BE /* MetaData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4A21B438B700052C7BE /* MetaData.m */; };
+		5D17D4A61B438B700052C7BE /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4A51B438B700052C7BE /* Button.m */; };
+		5D17D4A91B438B700052C7BE /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4A81B438B700052C7BE /* Notification.m */; };
+		5D17D4AC1B438B700052C7BE /* ProjectVariable.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4AB1B438B700052C7BE /* ProjectVariable.m */; };
+		5D17D4AF1B438B700052C7BE /* SocialContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4AE1B438B700052C7BE /* SocialContainer.m */; };
+		5D17D4B21B438B700052C7BE /* MenuItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4B11B438B700052C7BE /* MenuItem.m */; };
+		5D17D4B51B438B700052C7BE /* SocialItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4B41B438B700052C7BE /* SocialItem.m */; };
+		5D17D4B81B438B700052C7BE /* ThemeContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4B71B438B700052C7BE /* ThemeContainer.m */; };
+		5D17D4BB1B438B700052C7BE /* MenuContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4BA1B438B700052C7BE /* MenuContainer.m */; };
+		5D17D4BD1B438BCE0052C7BE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D17D4BC1B438BCE0052C7BE /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +54,27 @@
 		5D17D48E1B437D290052C7BE /* ApptlyPodTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ApptlyPodTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D17D4931B437D290052C7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D17D4941B437D290052C7BE /* ApptlyPodTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApptlyPodTests.m; sourceTree = "<group>"; };
+		5D17D49E1B438B6F0052C7BE /* ThemeItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeItem.h; sourceTree = "<group>"; };
+		5D17D49F1B438B6F0052C7BE /* ThemeItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeItem.m; sourceTree = "<group>"; };
+		5D17D4A11B438B700052C7BE /* MetaData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetaData.h; sourceTree = "<group>"; };
+		5D17D4A21B438B700052C7BE /* MetaData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetaData.m; sourceTree = "<group>"; };
+		5D17D4A41B438B700052C7BE /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		5D17D4A51B438B700052C7BE /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
+		5D17D4A71B438B700052C7BE /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
+		5D17D4A81B438B700052C7BE /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
+		5D17D4AA1B438B700052C7BE /* ProjectVariable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectVariable.h; sourceTree = "<group>"; };
+		5D17D4AB1B438B700052C7BE /* ProjectVariable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectVariable.m; sourceTree = "<group>"; };
+		5D17D4AD1B438B700052C7BE /* SocialContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialContainer.h; sourceTree = "<group>"; };
+		5D17D4AE1B438B700052C7BE /* SocialContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialContainer.m; sourceTree = "<group>"; };
+		5D17D4B01B438B700052C7BE /* MenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuItem.h; sourceTree = "<group>"; };
+		5D17D4B11B438B700052C7BE /* MenuItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuItem.m; sourceTree = "<group>"; };
+		5D17D4B31B438B700052C7BE /* SocialItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialItem.h; sourceTree = "<group>"; };
+		5D17D4B41B438B700052C7BE /* SocialItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialItem.m; sourceTree = "<group>"; };
+		5D17D4B61B438B700052C7BE /* ThemeContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThemeContainer.h; sourceTree = "<group>"; };
+		5D17D4B71B438B700052C7BE /* ThemeContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThemeContainer.m; sourceTree = "<group>"; };
+		5D17D4B91B438B700052C7BE /* MenuContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuContainer.h; sourceTree = "<group>"; };
+		5D17D4BA1B438B700052C7BE /* MenuContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuContainer.m; sourceTree = "<group>"; };
+		5D17D4BC1B438BCE0052C7BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		92DB6DE7C89AFEFFEE10D477 /* Pods-ApptlyPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApptlyPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApptlyPod/Pods-ApptlyPod.debug.xcconfig"; sourceTree = "<group>"; };
 		A11802ACE40E4DB3B30D9A86 /* Pods-ApptlyPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApptlyPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApptlyPod/Pods-ApptlyPod.release.xcconfig"; sourceTree = "<group>"; };
 		E891F792F3ECC4BD8410964D /* libPods-ApptlyPod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ApptlyPod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -53,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D17D4BD1B438BCE0052C7BE /* CoreData.framework in Frameworks */,
 				24847A63EE6B01DE95E00B9E /* libPods-ApptlyPod.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +132,26 @@
 				5D17D4871B437D290052C7BE /* LaunchScreen.xib */,
 				5D17D47C1B437D290052C7BE /* ApptlyPod.xcdatamodeld */,
 				5D17D4751B437D290052C7BE /* Supporting Files */,
+				5D17D4B91B438B700052C7BE /* MenuContainer.h */,
+				5D17D4BA1B438B700052C7BE /* MenuContainer.m */,
+				5D17D4B61B438B700052C7BE /* ThemeContainer.h */,
+				5D17D4B71B438B700052C7BE /* ThemeContainer.m */,
+				5D17D4B31B438B700052C7BE /* SocialItem.h */,
+				5D17D4B41B438B700052C7BE /* SocialItem.m */,
+				5D17D4B01B438B700052C7BE /* MenuItem.h */,
+				5D17D4B11B438B700052C7BE /* MenuItem.m */,
+				5D17D4AD1B438B700052C7BE /* SocialContainer.h */,
+				5D17D4AE1B438B700052C7BE /* SocialContainer.m */,
+				5D17D4AA1B438B700052C7BE /* ProjectVariable.h */,
+				5D17D4AB1B438B700052C7BE /* ProjectVariable.m */,
+				5D17D4A71B438B700052C7BE /* Notification.h */,
+				5D17D4A81B438B700052C7BE /* Notification.m */,
+				5D17D4A41B438B700052C7BE /* Button.h */,
+				5D17D4A51B438B700052C7BE /* Button.m */,
+				5D17D4A11B438B700052C7BE /* MetaData.h */,
+				5D17D4A21B438B700052C7BE /* MetaData.m */,
+				5D17D49E1B438B6F0052C7BE /* ThemeItem.h */,
+				5D17D49F1B438B6F0052C7BE /* ThemeItem.m */,
 			);
 			path = ApptlyPod;
 			sourceTree = "<group>";
@@ -141,6 +194,7 @@
 		77AF88E21F05F954808A7A6C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D17D4BC1B438BCE0052C7BE /* CoreData.framework */,
 				E891F792F3ECC4BD8410964D /* libPods-ApptlyPod.a */,
 			);
 			name = Frameworks;
@@ -281,10 +335,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D17D4A91B438B700052C7BE /* Notification.m in Sources */,
+				5D17D4B21B438B700052C7BE /* MenuItem.m in Sources */,
 				5D17D47E1B437D290052C7BE /* ApptlyPod.xcdatamodeld in Sources */,
+				5D17D4AC1B438B700052C7BE /* ProjectVariable.m in Sources */,
+				5D17D4A61B438B700052C7BE /* Button.m in Sources */,
 				5D17D47B1B437D290052C7BE /* APAppDelegate.m in Sources */,
 				5D17D4811B437D290052C7BE /* APViewController.m in Sources */,
+				5D17D4AF1B438B700052C7BE /* SocialContainer.m in Sources */,
+				5D17D4B81B438B700052C7BE /* ThemeContainer.m in Sources */,
 				5D17D4781B437D290052C7BE /* main.m in Sources */,
+				5D17D4B51B438B700052C7BE /* SocialItem.m in Sources */,
+				5D17D4A31B438B700052C7BE /* MetaData.m in Sources */,
+				5D17D4BB1B438B700052C7BE /* MenuContainer.m in Sources */,
+				5D17D4A01B438B6F0052C7BE /* ThemeItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

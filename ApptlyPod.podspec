@@ -9,6 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7'
   s.source_files = 'ApptlyPod/*.{h,m}'
   s.exclude_files = 'ApptlyPod/main.m'
+  s.framework    = 'CoreData'
   s.requires_arc = true
   s.dependency 'AFNetworking'
   s.dependency 'MMDrawerController', '~> 0.5.7'
