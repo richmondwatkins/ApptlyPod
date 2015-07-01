@@ -1,0 +1,55 @@
+PODS:
+  - AWSCore (2.1.2):
+    - Bolts (~> 1.1.0)
+    - GZIP (~> 1.0.3)
+    - Mantle (~> 1.4)
+    - Reachability (~> 3.1)
+    - UICKeyChainStore (~> 2.0)
+    - XMLDictionary (~> 1.4.0)
+  - AWSSNS (2.1.2):
+    - AWSCore (= 2.1.2)
+    - Bolts (~> 1.1.0)
+    - Mantle (~> 1.4)
+  - Bolts (1.1.5):
+    - Bolts/AppLinks (= 1.1.5)
+    - Bolts/Tasks (= 1.1.5)
+  - Bolts/AppLinks (1.1.5):
+    - Bolts/Tasks
+  - Bolts/Tasks (1.1.5)
+  - GZIP (1.0.3)
+  - Mantle (1.5.4):
+    - Mantle/extobjc (= 1.5.4)
+  - Mantle/extobjc (1.5.4)
+  - MMDrawerController (0.5.7):
+    - MMDrawerController/Core (= 0.5.7)
+    - MMDrawerController/MMDrawerBarButtonItem (= 0.5.7)
+    - MMDrawerController/MMDrawerVisualStates (= 0.5.7)
+    - MMDrawerController/Subclass (= 0.5.7)
+  - MMDrawerController/Core (0.5.7)
+  - MMDrawerController/MMDrawerBarButtonItem (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/MMDrawerVisualStates (0.5.7):
+    - MMDrawerController/Core
+  - MMDrawerController/Subclass (0.5.7):
+    - MMDrawerController/Core
+  - Reachability (3.2)
+  - UICKeyChainStore (2.0.6)
+  - XMLDictionary (1.4)
+
+DEPENDENCIES:
+  - AWSSNS (~> 2.1.2)
+  - Bolts
+  - MMDrawerController (~> 0.5.7)
+
+SPEC CHECKSUMS:
+  AWSCore: c8f48b48a8d5ab3c35171908695cea9a17e6dc82
+  AWSSNS: c5f5bab85da604f937014ddedf2635244f6c382b
+  Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  GZIP: f0863fda354e8f83316508c0a2c7bbe385e39129
+  Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
+  MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
+  UICKeyChainStore: c5719c814e8bd69e74e4a0fc09daf8f4d6257a59
+  XMLDictionary: f9f51601ba76678b594ab485f2b00ec1fed23724
+
+COCOAPODS: 0.36.3
