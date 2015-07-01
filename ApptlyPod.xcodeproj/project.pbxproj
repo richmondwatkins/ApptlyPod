@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		24847A63EE6B01DE95E00B9E /* libPods-ApptlyPod.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E891F792F3ECC4BD8410964D /* libPods-ApptlyPod.a */; };
 		5D17D4781B437D290052C7BE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4771B437D290052C7BE /* main.m */; };
-		5D17D47B1B437D290052C7BE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D47A1B437D290052C7BE /* AppDelegate.m */; };
+		5D17D47B1B437D290052C7BE /* APAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D47A1B437D290052C7BE /* APAppDelegate.m */; };
 		5D17D47E1B437D290052C7BE /* ApptlyPod.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D47C1B437D290052C7BE /* ApptlyPod.xcdatamodeld */; };
-		5D17D4811B437D290052C7BE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4801B437D290052C7BE /* ViewController.m */; };
+		5D17D4811B437D290052C7BE /* APViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4801B437D290052C7BE /* APViewController.m */; };
 		5D17D4841B437D290052C7BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D17D4821B437D290052C7BE /* Main.storyboard */; };
 		5D17D4861B437D290052C7BE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D17D4851B437D290052C7BE /* Images.xcassets */; };
 		5D17D4891B437D290052C7BE /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D17D4871B437D290052C7BE /* LaunchScreen.xib */; };
@@ -32,11 +32,11 @@
 		5D17D4721B437D290052C7BE /* ApptlyPod.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ApptlyPod.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D17D4761B437D290052C7BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5D17D4771B437D290052C7BE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		5D17D4791B437D290052C7BE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		5D17D47A1B437D290052C7BE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5D17D4791B437D290052C7BE /* APAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APAppDelegate.h; sourceTree = "<group>"; };
+		5D17D47A1B437D290052C7BE /* APAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APAppDelegate.m; sourceTree = "<group>"; };
 		5D17D47D1B437D290052C7BE /* ApptlyPod.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ApptlyPod.xcdatamodel; sourceTree = "<group>"; };
-		5D17D47F1B437D290052C7BE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5D17D4801B437D290052C7BE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		5D17D47F1B437D290052C7BE /* APViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APViewController.h; sourceTree = "<group>"; };
+		5D17D4801B437D290052C7BE /* APViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APViewController.m; sourceTree = "<group>"; };
 		5D17D4831B437D290052C7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5D17D4851B437D290052C7BE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		5D17D4881B437D290052C7BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -90,10 +90,10 @@
 		5D17D4741B437D290052C7BE /* ApptlyPod */ = {
 			isa = PBXGroup;
 			children = (
-				5D17D4791B437D290052C7BE /* AppDelegate.h */,
-				5D17D47A1B437D290052C7BE /* AppDelegate.m */,
-				5D17D47F1B437D290052C7BE /* ViewController.h */,
-				5D17D4801B437D290052C7BE /* ViewController.m */,
+				5D17D4791B437D290052C7BE /* APAppDelegate.h */,
+				5D17D47A1B437D290052C7BE /* APAppDelegate.m */,
+				5D17D47F1B437D290052C7BE /* APViewController.h */,
+				5D17D4801B437D290052C7BE /* APViewController.m */,
 				5D17D4821B437D290052C7BE /* Main.storyboard */,
 				5D17D4851B437D290052C7BE /* Images.xcassets */,
 				5D17D4871B437D290052C7BE /* LaunchScreen.xib */,
@@ -282,8 +282,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				5D17D47E1B437D290052C7BE /* ApptlyPod.xcdatamodeld in Sources */,
-				5D17D47B1B437D290052C7BE /* AppDelegate.m in Sources */,
-				5D17D4811B437D290052C7BE /* ViewController.m in Sources */,
+				5D17D47B1B437D290052C7BE /* APAppDelegate.m in Sources */,
+				5D17D4811B437D290052C7BE /* APViewController.m in Sources */,
 				5D17D4781B437D290052C7BE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

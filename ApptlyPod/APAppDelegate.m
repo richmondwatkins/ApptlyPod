@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Richmond Watkins. All rights reserved.
 //
 
-#import "AppDelegate.h"
+#import "APAppDelegate.h"
 
-@interface AppDelegate ()
+@interface APAppDelegate ()
 
 @end
 
-@implementation AppDelegate
+@implementation APAppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

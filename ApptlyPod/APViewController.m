@@ -6,13 +6,13 @@
 //  Copyright (c) 2015 Richmond Watkins. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "APViewController.h"
 
-@interface ViewController ()
+@interface APViewController ()
 
 @end
 
-@implementation ViewController
+@implementation APViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
