@@ -29,7 +29,6 @@
 		5D17D4BD1B438BCE0052C7BE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D17D4BC1B438BCE0052C7BE /* CoreData.framework */; };
 		5D17D4C01B4396010052C7BE /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4BF1B4396010052C7BE /* APIManager.m */; };
 		5D17D4C51B43960D0052C7BE /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4C21B43960D0052C7BE /* NSDate+Additions.m */; };
-		5D17D4C61B43960D0052C7BE /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4C41B43960D0052C7BE /* NSDate+Helper.m */; };
 		5D17D4C91B43961A0052C7BE /* UIColor+UIColor_Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4C81B43961A0052C7BE /* UIColor+UIColor_Expanded.m */; };
 		5D17D4CC1B4397F40052C7BE /* ProjectSettingsKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4CB1B4397F40052C7BE /* ProjectSettingsKeys.m */; };
 /* End PBXBuildFile section */
@@ -84,8 +83,6 @@
 		5D17D4BF1B4396010052C7BE /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		5D17D4C11B43960D0052C7BE /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
 		5D17D4C21B43960D0052C7BE /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
-		5D17D4C31B43960D0052C7BE /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
-		5D17D4C41B43960D0052C7BE /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
 		5D17D4C71B43961A0052C7BE /* UIColor+UIColor_Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Expanded.h"; sourceTree = "<group>"; };
 		5D17D4C81B43961A0052C7BE /* UIColor+UIColor_Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Expanded.m"; sourceTree = "<group>"; };
 		5D17D4CA1B4397F40052C7BE /* ProjectSettingsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectSettingsKeys.h; sourceTree = "<group>"; };
@@ -153,8 +150,6 @@
 				5D17D4BA1B438B700052C7BE /* MenuContainer.m */,
 				5D17D4C11B43960D0052C7BE /* NSDate+Additions.h */,
 				5D17D4C21B43960D0052C7BE /* NSDate+Additions.m */,
-				5D17D4C31B43960D0052C7BE /* NSDate+Helper.h */,
-				5D17D4C41B43960D0052C7BE /* NSDate+Helper.m */,
 				5D17D4B61B438B700052C7BE /* ThemeContainer.h */,
 				5D17D4B71B438B700052C7BE /* ThemeContainer.m */,
 				5D17D4B31B438B700052C7BE /* SocialItem.h */,
@@ -371,7 +366,6 @@
 				5D17D4C51B43960D0052C7BE /* NSDate+Additions.m in Sources */,
 				5D17D4811B437D290052C7BE /* APViewController.m in Sources */,
 				5D17D4AF1B438B700052C7BE /* SocialContainer.m in Sources */,
-				5D17D4C61B43960D0052C7BE /* NSDate+Helper.m in Sources */,
 				5D17D4B81B438B700052C7BE /* ThemeContainer.m in Sources */,
 				5D17D4781B437D290052C7BE /* main.m in Sources */,
 				5D17D4B51B438B700052C7BE /* SocialItem.m in Sources */,
