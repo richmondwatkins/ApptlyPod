@@ -7,13 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "SocialContainer.h"
 #import <CoreData/CoreData.h>
 
 @class MetaData, NSManagedObject;
 
 @interface ProjectVariable : NSManagedObject
 
-@property (nonatomic, retain) NSManagedObject *socialContainer;
+@property (nonatomic, retain) SocialContainer *socialContainer;
 @property (nonatomic, retain) MetaData *metaData;
 
 @end

@@ -27,6 +27,11 @@
 		5D17D4B81B438B700052C7BE /* ThemeContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4B71B438B700052C7BE /* ThemeContainer.m */; };
 		5D17D4BB1B438B700052C7BE /* MenuContainer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4BA1B438B700052C7BE /* MenuContainer.m */; };
 		5D17D4BD1B438BCE0052C7BE /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D17D4BC1B438BCE0052C7BE /* CoreData.framework */; };
+		5D17D4C01B4396010052C7BE /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4BF1B4396010052C7BE /* APIManager.m */; };
+		5D17D4C51B43960D0052C7BE /* NSDate+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4C21B43960D0052C7BE /* NSDate+Additions.m */; };
+		5D17D4C61B43960D0052C7BE /* NSDate+Helper.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4C41B43960D0052C7BE /* NSDate+Helper.m */; };
+		5D17D4C91B43961A0052C7BE /* UIColor+UIColor_Expanded.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4C81B43961A0052C7BE /* UIColor+UIColor_Expanded.m */; };
+		5D17D4CC1B4397F40052C7BE /* ProjectSettingsKeys.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D17D4CB1B4397F40052C7BE /* ProjectSettingsKeys.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +80,16 @@
 		5D17D4B91B438B700052C7BE /* MenuContainer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuContainer.h; sourceTree = "<group>"; };
 		5D17D4BA1B438B700052C7BE /* MenuContainer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuContainer.m; sourceTree = "<group>"; };
 		5D17D4BC1B438BCE0052C7BE /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		5D17D4BE1B4396010052C7BE /* APIManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		5D17D4BF1B4396010052C7BE /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		5D17D4C11B43960D0052C7BE /* NSDate+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Additions.h"; sourceTree = "<group>"; };
+		5D17D4C21B43960D0052C7BE /* NSDate+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Additions.m"; sourceTree = "<group>"; };
+		5D17D4C31B43960D0052C7BE /* NSDate+Helper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Helper.h"; sourceTree = "<group>"; };
+		5D17D4C41B43960D0052C7BE /* NSDate+Helper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Helper.m"; sourceTree = "<group>"; };
+		5D17D4C71B43961A0052C7BE /* UIColor+UIColor_Expanded.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+UIColor_Expanded.h"; sourceTree = "<group>"; };
+		5D17D4C81B43961A0052C7BE /* UIColor+UIColor_Expanded.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+UIColor_Expanded.m"; sourceTree = "<group>"; };
+		5D17D4CA1B4397F40052C7BE /* ProjectSettingsKeys.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProjectSettingsKeys.h; sourceTree = "<group>"; };
+		5D17D4CB1B4397F40052C7BE /* ProjectSettingsKeys.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProjectSettingsKeys.m; sourceTree = "<group>"; };
 		92DB6DE7C89AFEFFEE10D477 /* Pods-ApptlyPod.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApptlyPod.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ApptlyPod/Pods-ApptlyPod.debug.xcconfig"; sourceTree = "<group>"; };
 		A11802ACE40E4DB3B30D9A86 /* Pods-ApptlyPod.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ApptlyPod.release.xcconfig"; path = "Pods/Target Support Files/Pods-ApptlyPod/Pods-ApptlyPod.release.xcconfig"; sourceTree = "<group>"; };
 		E891F792F3ECC4BD8410964D /* libPods-ApptlyPod.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ApptlyPod.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -125,6 +140,8 @@
 			children = (
 				5D17D4791B437D290052C7BE /* APAppDelegate.h */,
 				5D17D47A1B437D290052C7BE /* APAppDelegate.m */,
+				5D17D4BE1B4396010052C7BE /* APIManager.h */,
+				5D17D4BF1B4396010052C7BE /* APIManager.m */,
 				5D17D47F1B437D290052C7BE /* APViewController.h */,
 				5D17D4801B437D290052C7BE /* APViewController.m */,
 				5D17D4821B437D290052C7BE /* Main.storyboard */,
@@ -134,6 +151,10 @@
 				5D17D4751B437D290052C7BE /* Supporting Files */,
 				5D17D4B91B438B700052C7BE /* MenuContainer.h */,
 				5D17D4BA1B438B700052C7BE /* MenuContainer.m */,
+				5D17D4C11B43960D0052C7BE /* NSDate+Additions.h */,
+				5D17D4C21B43960D0052C7BE /* NSDate+Additions.m */,
+				5D17D4C31B43960D0052C7BE /* NSDate+Helper.h */,
+				5D17D4C41B43960D0052C7BE /* NSDate+Helper.m */,
 				5D17D4B61B438B700052C7BE /* ThemeContainer.h */,
 				5D17D4B71B438B700052C7BE /* ThemeContainer.m */,
 				5D17D4B31B438B700052C7BE /* SocialItem.h */,
@@ -142,6 +163,8 @@
 				5D17D4B11B438B700052C7BE /* MenuItem.m */,
 				5D17D4AD1B438B700052C7BE /* SocialContainer.h */,
 				5D17D4AE1B438B700052C7BE /* SocialContainer.m */,
+				5D17D4CA1B4397F40052C7BE /* ProjectSettingsKeys.h */,
+				5D17D4CB1B4397F40052C7BE /* ProjectSettingsKeys.m */,
 				5D17D4AA1B438B700052C7BE /* ProjectVariable.h */,
 				5D17D4AB1B438B700052C7BE /* ProjectVariable.m */,
 				5D17D4A71B438B700052C7BE /* Notification.h */,
@@ -152,6 +175,8 @@
 				5D17D4A21B438B700052C7BE /* MetaData.m */,
 				5D17D49E1B438B6F0052C7BE /* ThemeItem.h */,
 				5D17D49F1B438B6F0052C7BE /* ThemeItem.m */,
+				5D17D4C71B43961A0052C7BE /* UIColor+UIColor_Expanded.h */,
+				5D17D4C81B43961A0052C7BE /* UIColor+UIColor_Expanded.m */,
 			);
 			path = ApptlyPod;
 			sourceTree = "<group>";
@@ -337,18 +362,23 @@
 			files = (
 				5D17D4A91B438B700052C7BE /* Notification.m in Sources */,
 				5D17D4B21B438B700052C7BE /* MenuItem.m in Sources */,
+				5D17D4C91B43961A0052C7BE /* UIColor+UIColor_Expanded.m in Sources */,
+				5D17D4CC1B4397F40052C7BE /* ProjectSettingsKeys.m in Sources */,
 				5D17D47E1B437D290052C7BE /* ApptlyPod.xcdatamodeld in Sources */,
 				5D17D4AC1B438B700052C7BE /* ProjectVariable.m in Sources */,
 				5D17D4A61B438B700052C7BE /* Button.m in Sources */,
 				5D17D47B1B437D290052C7BE /* APAppDelegate.m in Sources */,
+				5D17D4C51B43960D0052C7BE /* NSDate+Additions.m in Sources */,
 				5D17D4811B437D290052C7BE /* APViewController.m in Sources */,
 				5D17D4AF1B438B700052C7BE /* SocialContainer.m in Sources */,
+				5D17D4C61B43960D0052C7BE /* NSDate+Helper.m in Sources */,
 				5D17D4B81B438B700052C7BE /* ThemeContainer.m in Sources */,
 				5D17D4781B437D290052C7BE /* main.m in Sources */,
 				5D17D4B51B438B700052C7BE /* SocialItem.m in Sources */,
 				5D17D4A31B438B700052C7BE /* MetaData.m in Sources */,
 				5D17D4BB1B438B700052C7BE /* MenuContainer.m in Sources */,
 				5D17D4A01B438B6F0052C7BE /* ThemeItem.m in Sources */,
+				5D17D4C01B4396010052C7BE /* APIManager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

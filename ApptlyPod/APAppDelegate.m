@@ -7,7 +7,7 @@
 //
 
 #import "APAppDelegate.h"
-
+#import "APIManager.h"
 @interface APAppDelegate ()
 
 @end
@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    APIManager *projectSettings = [[APIManager sharedManager] init];
+    [projectSettings populateCoreData:self.managedObjectContext withCompletion:^(BOOL completion) {
+        if (completion) {
+            [[APIManager sharedManager] requestAppData:self.managedObjectContext];
+        }
+    }];
+    
     return YES;
 }
 
