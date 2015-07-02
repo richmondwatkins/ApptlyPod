@@ -38,6 +38,7 @@
 		5DA733B11B44D8320013798B /* UIView+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DA733B01B44D8320013798B /* UIView+Additions.m */; };
 		5DA733B31B44D9020013798B /* SourceSansPro-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5DA733B21B44D9020013798B /* SourceSansPro-Regular.otf */; };
 		5DA733B51B44DC770013798B /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA733B41B44DC770013798B /* Fabric.framework */; };
+		5DA733B71B44DEA00013798B /* Pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DA733B61B44DEA00013798B /* Pinterest.framework */; };
 		5DC1AFC61B44C37D00A72354 /* BASocialShareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC1AF7F1B44C37D00A72354 /* BASocialShareViewController.m */; };
 		5DC1AFC71B44C37D00A72354 /* BATableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC1AF811B44C37D00A72354 /* BATableViewCell.m */; };
 		5DC1AFC81B44C37D00A72354 /* BAView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC1AF831B44C37D00A72354 /* BAView.m */; };
@@ -300,8 +301,6 @@
 		5DC1B2F51B44C3D600A72354 /* FacebookTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DC1B2141B44C3D600A72354 /* FacebookTableViewCell.m */; };
 		5DC1B3011B44C4B900A72354 /* GoogleOpenSource.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC1B2F81B44C4B900A72354 /* GoogleOpenSource.framework */; };
 		5DC1B3021B44C4B900A72354 /* GooglePlus.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC1B2F91B44C4B900A72354 /* GooglePlus.framework */; };
-		5DC1B3031B44C4B900A72354 /* Pinterest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC1B2FB1B44C4B900A72354 /* Pinterest.framework */; };
-		5DC1B3041B44C4B900A72354 /* PinterestSDKResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5DC1B2FD1B44C4B900A72354 /* PinterestSDKResources.bundle */; };
 		5DC1B3051B44C4B900A72354 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC1B2FE1B44C4B900A72354 /* TwitterCore.framework */; };
 		5DC1B3081B44C5CB00A72354 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC1B3071B44C5CB00A72354 /* Crashlytics.framework */; };
 		5DC1B30B1B44C64A00A72354 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5DC1B3091B44C64A00A72354 /* AddressBook.framework */; };
@@ -385,6 +384,7 @@
 		5DA733B01B44D8320013798B /* UIView+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Additions.m"; sourceTree = "<group>"; };
 		5DA733B21B44D9020013798B /* SourceSansPro-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SourceSansPro-Regular.otf"; sourceTree = "<group>"; };
 		5DA733B41B44DC770013798B /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		5DA733B61B44DEA00013798B /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pinterest.framework; sourceTree = "<group>"; };
 		5DC1AF7E1B44C37D00A72354 /* BASocialShareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BASocialShareViewController.h; sourceTree = "<group>"; };
 		5DC1AF7F1B44C37D00A72354 /* BASocialShareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BASocialShareViewController.m; sourceTree = "<group>"; };
 		5DC1AF801B44C37D00A72354 /* BATableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BATableViewCell.h; sourceTree = "<group>"; };
@@ -979,8 +979,6 @@
 		5DC1B2141B44C3D600A72354 /* FacebookTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FacebookTableViewCell.m; sourceTree = "<group>"; };
 		5DC1B2F81B44C4B900A72354 /* GoogleOpenSource.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleOpenSource.framework; sourceTree = "<group>"; };
 		5DC1B2F91B44C4B900A72354 /* GooglePlus.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GooglePlus.framework; sourceTree = "<group>"; };
-		5DC1B2FB1B44C4B900A72354 /* Pinterest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Pinterest.framework; sourceTree = "<group>"; };
-		5DC1B2FD1B44C4B900A72354 /* PinterestSDKResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = PinterestSDKResources.bundle; sourceTree = "<group>"; };
 		5DC1B2FE1B44C4B900A72354 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		5DC1B3071B44C5CB00A72354 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		5DC1B3091B44C64A00A72354 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
@@ -1021,13 +1019,13 @@
 				5DC1B3141B44C68900A72354 /* MediaPlayer.framework in Frameworks */,
 				5DC1B3121B44C68100A72354 /* SystemConfiguration.framework in Frameworks */,
 				5DC1B30E1B44C65500A72354 /* CoreMotion.framework in Frameworks */,
+				5DA733B71B44DEA00013798B /* Pinterest.framework in Frameworks */,
 				5DC1B30B1B44C64A00A72354 /* AddressBook.framework in Frameworks */,
 				5DC1B30C1B44C64A00A72354 /* AddressBookUI.framework in Frameworks */,
 				5DA733AC1B44D3F40013798B /* TwitterKit.framework in Frameworks */,
 				5DC1B3021B44C4B900A72354 /* GooglePlus.framework in Frameworks */,
 				5DC1B3081B44C5CB00A72354 /* Crashlytics.framework in Frameworks */,
 				5DA733B51B44DC770013798B /* Fabric.framework in Frameworks */,
-				5DC1B3031B44C4B900A72354 /* Pinterest.framework in Frameworks */,
 				5DC1B3051B44C4B900A72354 /* TwitterCore.framework in Frameworks */,
 				5D17D4BD1B438BCE0052C7BE /* CoreData.framework in Frameworks */,
 				24847A63EE6B01DE95E00B9E /* libPods-ApptlyPod.a in Frameworks */,
@@ -2019,33 +2017,16 @@
 		5DC1B2F61B44C4B900A72354 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5DA733B61B44DEA00013798B /* Pinterest.framework */,
 				5DA733B41B44DC770013798B /* Fabric.framework */,
 				5DA733AD1B44D40B0013798B /* TwitterKitResources.bundle */,
 				5DA733AB1B44D3F40013798B /* TwitterKit.framework */,
 				5DC1B3071B44C5CB00A72354 /* Crashlytics.framework */,
 				5DC1B2F81B44C4B900A72354 /* GoogleOpenSource.framework */,
 				5DC1B2F91B44C4B900A72354 /* GooglePlus.framework */,
-				5DC1B2FA1B44C4B900A72354 /* Pinterest.embeddedframework */,
 				5DC1B2FE1B44C4B900A72354 /* TwitterCore.framework */,
 			);
 			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		5DC1B2FA1B44C4B900A72354 /* Pinterest.embeddedframework */ = {
-			isa = PBXGroup;
-			children = (
-				5DC1B2FB1B44C4B900A72354 /* Pinterest.framework */,
-				5DC1B2FC1B44C4B900A72354 /* Resources */,
-			);
-			path = Pinterest.embeddedframework;
-			sourceTree = "<group>";
-		};
-		5DC1B2FC1B44C4B900A72354 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				5DC1B2FD1B44C4B900A72354 /* PinterestSDKResources.bundle */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		5DC1B3211B44C87D00A72354 /* DataSeedFiles */ = {
@@ -2178,7 +2159,6 @@
 				5DC1B3271B44C87D00A72354 /* ProjectVariables.plist in Resources */,
 				5DC1B3291B44C87D00A72354 /* Themer.plist in Resources */,
 				5DA733AE1B44D40B0013798B /* TwitterKitResources.bundle in Resources */,
-				5DC1B3041B44C4B900A72354 /* PinterestSDKResources.bundle in Resources */,
 				5DA733B31B44D9020013798B /* SourceSansPro-Regular.otf in Resources */,
 				5DC1B3261B44C87D00A72354 /* MenuItemList.plist in Resources */,
 				5D17D4891B437D290052C7BE /* LaunchScreen.xib in Resources */,
@@ -2209,7 +2189,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "/ApptlyPod/Frameworks/Fabric.framework/run b2fa13da961943ada093ca86282c0717d8d6c662 7cad0ab1a6f39490fc1b7a2086c4b18cd46eab09c11125e6b936de9bc4dd93ee\n";
+			shellScript = "ApptlyPod/Frameworks/Fabric.framework/run b2fa13da961943ada093ca86282c0717d8d6c662 7cad0ab1a6f39490fc1b7a2086c4b18cd46eab09c11125e6b936de9bc4dd93ee\n";
 		};
 		9A735BFD2BC50769D5A11970 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
