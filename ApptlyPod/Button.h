@@ -2,19 +2,19 @@
 //  Button.h
 //  ApptlyPod
 //
-//  Created by Richmond Watkins on 6/30/15.
+//  Created by Richmond Watkins on 7/1/15.
 //  Copyright (c) 2015 Richmond Watkins. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-@class NSManagedObject;
+@class SocialItem;
 
 @interface Button : NSManagedObject
 
 @property (nonatomic, retain) NSNumber * id;
 @property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSManagedObject *socialItem;
+@property (nonatomic, retain) SocialItem *socialItem;
 
 @end

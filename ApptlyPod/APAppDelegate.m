@@ -8,6 +8,13 @@
 
 #import "APAppDelegate.h"
 #import "APIManager.h"
+#import "APSideMenuViewController.h"
+#import "CenterViewController.h"
+#import <AWSSNS.h>
+#import <Fabric/Fabric.h>
+#import <TwitterKit/TwitterKit.h>
+#import <Crashlytics/Crashlytics.h>
+
 @interface APAppDelegate ()
 
 @end
@@ -16,14 +23,108 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    APIManager *projectSettings = [[APIManager sharedManager] init];
+    APIManager *projectSettings = [[APIManager sharedManager] initFromPlist];
     [projectSettings populateCoreData:self.managedObjectContext withCompletion:^(BOOL completion) {
         if (completion) {
             [[APIManager sharedManager] requestAppData:self.managedObjectContext];
+                [self setUpDrawerController];
+                
+                [self checkForTwitter];
+                
+                [self setUpGooglePlus];
         }
     }];
     
+    
+    AWSStaticCredentialsProvider *credentialsProvider = [[AWSStaticCredentialsProvider alloc] initWithAccessKey:@"AKIAIWP6JCHRY25UQ2DA" secretKey:@"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"];
+    
+    AWSServiceConfiguration *defaultServiceConfiguration = [[AWSServiceConfiguration alloc]
+                                                            initWithRegion:AWSRegionUSWest2 credentialsProvider:credentialsProvider];
+    
+    [AWSServiceManager defaultServiceManager].defaultServiceConfiguration = defaultServiceConfiguration;
+    
+#if DEBUG
+    [[APIManager sharedManager] setNotification:@{@"aps":@{@"alert":@"This is a test push notif"}} withManagedObjectContext:self.managedObjectContext];
+#endif
+    
+    int cacheSizeMemory = 4*1024*1024; // 4MB
+    int cacheSizeDisk = 32*1024*1024; // 32MB
+    NSURLCache *sharedCache = [[NSURLCache alloc] initWithMemoryCapacity:cacheSizeMemory diskCapacity:cacheSizeDisk diskPath:@"nsurlcache"];
+    [NSURLCache setSharedURLCache:sharedCache];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(checkForAndInitializeSocialAccounts)
+                                                 name:@"coreDataUpdated" object:nil];
+    
+    [Fabric with:@[CrashlyticsKit]];
+    
     return YES;
+}
+
+- (void) setUpDrawerController {
+    
+    BOOL hasSocialAccounts = [[APIManager sharedManager] projectHasSocialAccounts];
+    
+    APSideMenuViewController *leftDrawer = [[APSideMenuViewController alloc] init];
+    CenterViewController *mainVC = [[CenterViewController alloc] init];
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
+    
+    if (hasSocialAccounts) {
+        self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:navigationController leftDrawerViewController:leftDrawer];
+        
+        [mainVC setRightNavigationItem];
+        
+    }else {
+        self.drawerController = [[MMDrawerController alloc] initWithCenterViewController:navigationController leftDrawerViewController:leftDrawer];
+    }
+    
+    self.drawerController.maximumLeftDrawerWidth = [leftDrawer returnWidthForMenuViewController];
+    
+    self.drawerController.closeDrawerGestureModeMask = MMCloseDrawerGestureModeAll;
+    self.drawerController.shouldStretchDrawer = NO;
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    
+    [self.window setRootViewController:self.drawerController];
+}
+
+- (void)checkForAndInitializeSocialAccounts {
+    [self checkForTwitter];
+    [self setUpGooglePlus];
+}
+
+- (void)checkForTwitter {
+    
+    BOOL hasTwitter = [[APIManager sharedManager] siteHasSocialAccount:TWIITER withMoc:self.managedObjectContext];
+    
+    if (hasTwitter) {
+        [[Twitter sharedInstance] startWithConsumerKey:@"lvxOObQTS9IZZu3ta9mRFRtsG" consumerSecret:@"JjNYcpN5eTnIiRxxc9IMfrF9X6yEgubCsNotQWfr6fkdoJnSKj"];
+        [Fabric with:@[[Twitter sharedInstance]]];
+    }
+    
+#if DEBUG
+    [[Twitter sharedInstance] startWithConsumerKey:@"lvxOObQTS9IZZu3ta9mRFRtsG" consumerSecret:@"JjNYcpN5eTnIiRxxc9IMfrF9X6yEgubCsNotQWfr6fkdoJnSKj"];
+    [Fabric with:@[[Twitter sharedInstance]]];
+#endif
+}
+
+
+- (void) setUpGooglePlus {
+    
+    BOOL hasGooglePlus = [[APIManager sharedManager] siteHasSocialAccount:GOOGLEPLUS withMoc:self.managedObjectContext];
+    
+    if (hasGooglePlus) {
+        
+        [GPPSignIn sharedInstance].clientID = [[APIManager sharedManager] fetchSocialItem:GOOGLEPLUS withProperty:@"accountId"];
+        
+        [GPPDeepLink setDelegate:self];
+        
+        [GPPDeepLink readDeepLinkAfterInstall];
+    }
+    
+}
+
+- (void)applicationDidReceiveMemoryWarning:(UIApplication *)application {
+    [[NSURLCache sharedURLCache] removeAllCachedResponses];
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
@@ -67,7 +168,9 @@
         return _managedObjectModel;
     }
     NSURL *modelURL = [[NSBundle mainBundle] URLForResource:@"ApptlyPod" withExtension:@"momd"];
+   
     _managedObjectModel = [[NSManagedObjectModel alloc] initWithContentsOfURL:modelURL];
+
     return _managedObjectModel;
 }
 

@@ -119,9 +119,10 @@ static APIManager *sharedThemeManager = nil;
             
             projectVariable.metaData = [self setMetaData:json[@"metaData"] withMoc:moc];
             
+            
             [moc save:nil];
             
-            [[NSNotificationCenter defaultCenter] postNotificationName:@"coreDataUpdated" object:nil];
+            [[NSNotificationCenter defaultCenter] postNotificationName:@"coreDataUpdated" object:nil];            
         }
     }];
 }
@@ -188,7 +189,6 @@ static APIManager *sharedThemeManager = nil;
     [menuContainer setMenuItems:[self createMenuItems:self.menuItems withManagedObject:moc]];
     
     [moc save:nil];
-
 
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
 
