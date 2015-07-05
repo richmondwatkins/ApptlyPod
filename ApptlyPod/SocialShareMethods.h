@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "FacebookSDK.h"
+
+//#import "FacebookSDK.h"
 #import <Pinterest/Pinterest.h>
 #import <TwitterKit/TwitterKit.h>
 #import <GooglePlus/GooglePlus.h>
@@ -18,7 +19,7 @@
 
 + (SocialShareMethods *)sharedManager;
 
-- (BOOL)shareToFaceBookWithURL:(FBLinkShareParams *)params;
+//- (BOOL)shareToFaceBookWithURL:(FBLinkShareParams *)params;
 
 - (BOOL)pinToPinterest:(NSURL *)imageURL andSource:(NSURL *)sourceURL;
 

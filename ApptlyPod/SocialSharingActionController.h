@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "SocialSharePopoverView.h"
-#import "FacebookSDK.h"
+//#import "FacebookSDK.h"
 #import <Pinterest/Pinterest.h>
 #import <TwitterKit/TwitterKit.h>
 
@@ -18,7 +18,7 @@
 @optional
 
 - (void)facebookShareInternal:(NSString *)shareContent;
-- (void)facebookShareExternal:(FBLinkShareParams *)shareContent;
+//- (void)facebookShareExternal:(FBLinkShareParams *)shareContent;
 - (void)socialWebView:(NSURL *)facebookURL;
 - (void)instagramAuthWebView:(NSURL *)instagramURL;
 - (void)instantiateOAuthLoginView:(int)socialType;

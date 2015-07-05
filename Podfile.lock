@@ -16,6 +16,17 @@ PODS:
   - Bolts/AppLinks (1.1.5):
     - Bolts/Tasks
   - Bolts/Tasks (1.1.5)
+  - FBSDKCoreKit (0.0.8):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc (= 0.0.8)
+    - FBSDKCoreKit/no-arc (= 0.0.8)
+  - FBSDKCoreKit/arc (0.0.8):
+    - Bolts (~> 1.1)
+  - FBSDKCoreKit/no-arc (0.0.8):
+    - Bolts (~> 1.1)
+    - FBSDKCoreKit/arc
+  - FBSDKLoginKit (0.0.7)
+  - FBSDKShareKit (0.0.8)
   - GZIP (1.0.3)
   - Mantle (1.5.4):
     - Mantle/extobjc (= 1.5.4)
@@ -38,13 +49,43 @@ PODS:
 
 DEPENDENCIES:
   - AWSSNS (~> 2.1.2)
-  - Bolts
+  - FBSDKCoreKit (from `https://github.com/richmondwatkins/facebook-ios-sdk.git`,
+    tag `apptly-0.0.8`)
+  - FBSDKLoginKit (from `https://github.com/richmondwatkins/facebook-ios-sdk.git`,
+    tag `apptly-0.0.8`)
+  - FBSDKShareKit (from `https://github.com/richmondwatkins/facebook-ios-sdk.git`,
+    tag `apptly-0.0.8`)
   - MMDrawerController (~> 0.5.7)
+
+EXTERNAL SOURCES:
+  FBSDKCoreKit:
+    :git: https://github.com/richmondwatkins/facebook-ios-sdk.git
+    :tag: apptly-0.0.8
+  FBSDKLoginKit:
+    :git: https://github.com/richmondwatkins/facebook-ios-sdk.git
+    :tag: apptly-0.0.8
+  FBSDKShareKit:
+    :git: https://github.com/richmondwatkins/facebook-ios-sdk.git
+    :tag: apptly-0.0.8
+
+CHECKOUT OPTIONS:
+  FBSDKCoreKit:
+    :git: https://github.com/richmondwatkins/facebook-ios-sdk.git
+    :tag: apptly-0.0.8
+  FBSDKLoginKit:
+    :git: https://github.com/richmondwatkins/facebook-ios-sdk.git
+    :tag: apptly-0.0.8
+  FBSDKShareKit:
+    :git: https://github.com/richmondwatkins/facebook-ios-sdk.git
+    :tag: apptly-0.0.8
 
 SPEC CHECKSUMS:
   AWSCore: c8f48b48a8d5ab3c35171908695cea9a17e6dc82
   AWSSNS: c5f5bab85da604f937014ddedf2635244f6c382b
   Bolts: aac24961496d504aa56fc267cde95162a71bac39
+  FBSDKCoreKit: d8b89915579a1ab1a4ce1756722e14f5bdef9147
+  FBSDKLoginKit: 9b14dcfb7744b5828409f165c19ff33617a4d688
+  FBSDKShareKit: 7279bdd66befc244073a977b0132d447b1ba9d65
   GZIP: f0863fda354e8f83316508c0a2c7bbe385e39129
   Mantle: 60acd0cd363e27d945bda0a6b8e90577112d28f3
   MMDrawerController: 7a4cf8e25596bf2434e03ce50d22a8608ddee6a1

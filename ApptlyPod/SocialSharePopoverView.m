@@ -8,7 +8,8 @@
 
 #import "SocialSharePopoverView.h"
 #import "APIManager.h"
-#import "FacebookSDK.h"
+//#import "FacebookSDK.h"
+#import <FBSDKLikeControl.h>
 #import <TwitterKit/TwitterKit.h>
 
 @interface SocialSharePopoverView () <UIGestureRecognizerDelegate>
@@ -176,42 +177,50 @@ CGFloat const kTitleHeight = 40;
 
 
 - (void)genarateLikeButton:(UIView *)popUp withOriginalButton:(UIButton *)button {
+//
+//    [FBSettings enablePlatformCompatibility:NO];
+//
+//    NSString *buttonTitle;
+//
+//   self.facebookLikeStatus = [[APIManager sharedManager] hasInteractedWithSocialItem:FACEBOOK];
+//
+//    if (self.facebookLikeStatus) {
+//        buttonTitle = @"Liked";
+//    }else {
+//        buttonTitle = @"Like";
+//    }
+//
+//
+//    FBLikeControl *like = [[FBLikeControl alloc] initWithFrame:CGRectMake(0, 0, popUp.frame.size.width * 0.8, kButtonHeight) andTitle:buttonTitle];
+//
+//    like.objectID = [[APIManager sharedManager] fetchSocialItem:FACEBOOK withProperty:kSocialAccountURL];
+//    like.preferredMaxLayoutWidth = 300;
+//    like.likeControlStyle = FBLikeControlStyleButton;
+//    like.likeControlAuxiliaryPosition = FBLikeControlHorizontalAlignmentCenter;
+//
 
-    [FBSettings enablePlatformCompatibility:NO];
+//
+//    [popUp addSubview:like];
+//
+//    [like addTarget:self action:@selector(handleFacebookLike:) forControlEvents:UIControlEventTouchUpInside];
+    
+    FBSDKLikeControl *fbButton = [[FBSDKLikeControl alloc] initWithFrame:CGRectMake(0, 0, popUp.frame.size.width * 0.8, kButtonHeight)];
+    
 
-    NSString *buttonTitle;
-
-   self.facebookLikeStatus = [[APIManager sharedManager] hasInteractedWithSocialItem:FACEBOOK];
-
-    if (self.facebookLikeStatus) {
-        buttonTitle = @"Liked";
-    }else {
-        buttonTitle = @"Like";
-    }
-
-
-    FBLikeControl *like = [[FBLikeControl alloc] initWithFrame:CGRectMake(0, 0, popUp.frame.size.width * 0.8, kButtonHeight) andTitle:buttonTitle];
-
-    like.objectID = [[APIManager sharedManager] fetchSocialItem:FACEBOOK withProperty:kSocialAccountURL];
-    like.preferredMaxLayoutWidth = 300;
-    like.likeControlStyle = FBLikeControlStyleButton;
-    like.likeControlAuxiliaryPosition = FBLikeControlHorizontalAlignmentCenter;
-
+    
     UIView *lastSubView = [[popUp subviews] lastObject];
-
+    
     if (lastSubView && ![lastSubView isKindOfClass:[UILabel class]]) {
         
-        [like setCenter:CGPointMake(popUp.frame.size.width / 2,
-                                      lastSubView.center.y + button.frame.size.height + kButtonPadding)];
+        [fbButton setCenter:CGPointMake(popUp.frame.size.width / 2,
+                                        lastSubView.center.y + button.frame.size.height + kButtonPadding)];
     }else {
         
-        [self setFirstButton:like withPopUp:popUp];
+        [self setFirstButton:fbButton withPopUp:popUp];
     }
-
-    [popUp addSubview:like];
-
-    [like addTarget:self action:@selector(handleFacebookLike:) forControlEvents:UIControlEventTouchUpInside];
-
+    
+    fbButton.objectID = @"https://www.facebook.com/FacebookDevelopers";
+    [popUp addSubview:fbButton];
 }
 
 //TODO Handle facebook like text

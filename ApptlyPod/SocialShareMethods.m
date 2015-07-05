@@ -43,48 +43,48 @@ static SocialShareMethods *sharedSocialManager = nil;
 }
 
 //========== FACEBOOK =========
-
-- (BOOL)shareToFaceBookWithURL:(FBLinkShareParams *)params {
-
-    if ([FBDialogs canPresentShareDialogWithParams:params]) {
-
-        [self shareToFacebookExternal:params];
-
-        return YES;
-    } else {
-
-        if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
-
-            NSString *facebookPageName = [[APIManager sharedManager] fetchmetaDataVariables:kSiteName];
-
-            [self shareToFacebookInternal:[NSString stringWithFormat:@"%@ | %@", facebookPageName, params.link.absoluteString]];
-
-            return YES;
-        }else {
-
-            return NO;
-        }
-    }
-
-    return NO;
-
-}
-
-- (void)shareToFacebookExternal:(FBLinkShareParams *) params {
-
-    [FBDialogs presentShareDialogWithLink:params.link
-                                  handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
-                                      if(error) {
-                                          // An error occurred, we need to handle the error
-                                          // See: https://developers.facebook.com/docs/ios/errors
-                                          NSLog(@"Error publishing story: %@", error.description);
-                                      } else {
-                                          // Success
-                                          NSLog(@"result %@", results);
-                                      }
-                                  }];
-
-}
+//
+//- (BOOL)shareToFaceBookWithURL:(FBLinkShareParams *)params {
+//
+//    if ([FBDialogs canPresentShareDialogWithParams:params]) {
+//
+//        [self shareToFacebookExternal:params];
+//
+//        return YES;
+//    } else {
+//
+//        if([SLComposeViewController isAvailableForServiceType:SLServiceTypeFacebook]) {
+//
+//            NSString *facebookPageName = [[APIManager sharedManager] fetchmetaDataVariables:kSiteName];
+//
+//            [self shareToFacebookInternal:[NSString stringWithFormat:@"%@ | %@", facebookPageName, params.link.absoluteString]];
+//
+//            return YES;
+//        }else {
+//
+//            return NO;
+//        }
+//    }
+//
+//    return NO;
+//
+//}
+//
+//- (void)shareToFacebookExternal:(FBLinkShareParams *) params {
+//
+//    [FBDialogs presentShareDialogWithLink:params.link
+//                                  handler:^(FBAppCall *call, NSDictionary *results, NSError *error) {
+//                                      if(error) {
+//                                          // An error occurred, we need to handle the error
+//                                          // See: https://developers.facebook.com/docs/ios/errors
+//                                          NSLog(@"Error publishing story: %@", error.description);
+//                                      } else {
+//                                          // Success
+//                                          NSLog(@"result %@", results);
+//                                      }
+//                                  }];
+//
+//}
 
 - (void)shareToFacebookInternal:(NSString *)shareContent {
 

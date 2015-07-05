@@ -18,8 +18,14 @@ Pod::Spec.new do |s|
   s.dependency 'AWSSNS', '~> 2.1.2'
   s.dependency 'Bolts'
 
-  s.subspec 'no-arc' do |sp|
-    sp.source_files = 'ApptlyPod/FacebookiOSSDK/**/*'
-    sp.requires_arc = false
-  end
+  s.dependency 'FBSDKCoreKit', :git => 'https://github.com/richmondwatkins/facebook-ios-sdk.git', :tag => 'apptly-0.0.8'
+
+  s.dependency 'FBSDKLoginKit', :git => 'https://github.com/richmondwatkins/facebook-ios-sdk.git', :tag => 'apptly-0.0.8'
+
+  s.dependency 'FBSDKShareKit', :git => 'https://github.com/richmondwatkins/facebook-ios-sdk.git', :tag => 'apptly-0.0.8'
+
+  # s.subspec 'no-arc' do |sp|
+  #   sp.source_files = 'ApptlyPod/FacebookiOSSDK/**/*'
+  #   sp.requires_arc = false
+  # end
 end

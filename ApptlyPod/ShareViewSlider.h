@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "FacebookSDK.h"
+//#import "FacebookSDK.h"
 
 @protocol ShareSliderProtocol
 
@@ -15,7 +15,7 @@
 
 - (void)socialWebView:(NSURL *)facebookURL;
 - (void)facebookShareInternal:(NSString *)shareContent;
-- (void)facebookShareExternal:(FBLinkShareParams *)shareContent;
+//- (void)facebookShareExternal:(FBLinkShareParams *)shareContent;
 - (NSURL *)returnCurrentURL;
 - (void)oAuthSetUpDelegate:(int)socialOAuth;
 - (void)removeWindowViews;

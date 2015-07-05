@@ -79,16 +79,16 @@
 
 - (void)facebookShareDelegate:(UIButton *)button {
 
-    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-    
-    params.link = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.facebook.com/%@",
-                                        [[APIManager sharedManager] fetchSocialItem:FACEBOOK withProperty:@"accountId"]]];
-    BOOL didShare = [[SocialShareMethods sharedManager] shareToFaceBookWithURL:params];
-
-    if (!didShare) {
-
-        [self.delegate socialWebView:params.link];
-    }
+//    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
+//    
+//    params.link = [NSURL URLWithString:[NSString stringWithFormat:@"https://www.facebook.com/%@",
+//                                        [[APIManager sharedManager] fetchSocialItem:FACEBOOK withProperty:@"accountId"]]];
+//    BOOL didShare = [[SocialShareMethods sharedManager] shareToFaceBookWithURL:params];
+//
+//    if (!didShare) {
+//
+//        [self.delegate socialWebView:params.link];
+//    }
 
     [self.popUpView animateOffScreen];
 }

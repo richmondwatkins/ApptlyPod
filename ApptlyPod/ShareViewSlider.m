@@ -139,20 +139,20 @@ CGFloat const kButtonHeightAndWidth = 40;
 
 - (void)facebookShareDelegate:(UIButton *)button {
 
-    [self.delegate removeWindowViews];
-
-    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
-
-    params.link = [self.delegate returnCurrentURL];
-
-    NSString *accountPage = [[APIManager sharedManager] fetchSocialItem:FACEBOOK withProperty:kSocialAccountURL];
-
-    BOOL didShare = [[SocialShareMethods sharedManager] shareToFaceBookWithURL:params];
-
-    if (!didShare) {
-
-        [self.delegate socialWebView:[NSURL URLWithString:accountPage]];
-    }
+//    [self.delegate removeWindowViews];
+//
+//    FBLinkShareParams *params = [[FBLinkShareParams alloc] init];
+//
+//    params.link = [self.delegate returnCurrentURL];
+//
+//    NSString *accountPage = [[APIManager sharedManager] fetchSocialItem:FACEBOOK withProperty:kSocialAccountURL];
+//
+//    BOOL didShare = [[SocialShareMethods sharedManager] shareToFaceBookWithURL:params];
+//
+//    if (!didShare) {
+//
+//        [self.delegate socialWebView:[NSURL URLWithString:accountPage]];
+//    }
 }
 
 - (void)pinIt:(UIButton *)button {
