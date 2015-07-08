@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, '7'
   s.source_files = 'ApptlyPod/**/*.{h,m}'
   s.exclude_files = 'ApptlyPod/main.m'
-  s.resources     = 'ApptlyPod/ApptlyPod.xcdatamodeld', 'ApptlyPod/DataSeedFiles/**/*'
+  s.resources     = 'ApptlyPod/ApptlyPod.xcdatamodeld', 'ApptlyPod/DataSeedFiles/**/*', 'ApptlyPod/Images.xcassets'
   s.frameworks    =  'CoreData', 'Security', 'AssetsLibrary', 'Foundation', 'CoreLocation', 'CoreGraphics', 'CoreText', 'MediaPlayer', 'SystemConfiguration', 'CoreVideo', 'CoreMotion', 'AddressBook', 'AddressBookUI'
   s.vendored_frameworks = 'ApptlyPod/Frameworks/*.framework'
   s.requires_arc = true

@@ -660,7 +660,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "ApptlyPod/Frameworks/Fabric.framework/run b2fa13da961943ada093ca86282c0717d8d6c662 7cad0ab1a6f39490fc1b7a2086c4b18cd46eab09c11125e6b936de9bc4dd93ee\n";
+			shellScript = "/Users/richmondwatkins/Documents/Code/ApptlyPod/ApptlyPod/Frameworks/Fabric.framework/run b2fa13da961943ada093ca86282c0717d8d6c662 7cad0ab1a6f39490fc1b7a2086c4b18cd46eab09c11125e6b936de9bc4dd93ee\n";
 		};
 		9A735BFD2BC50769D5A11970 /* Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
