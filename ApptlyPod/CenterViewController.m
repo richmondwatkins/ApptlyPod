@@ -28,6 +28,7 @@
 @property MMDrawerController *drawerController;
 @property ShareViewSlider *shareSlideUp;
 @property CGFloat scrollViewOffset;
+@property NSString *domainString;
 
 @end
 
@@ -133,15 +134,14 @@
         [self.webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:urlString]]];
     }
     
+     self.domainString = [[APIManager sharedManager] fetchmetaDataVariables:kDomainString];
 }
 
 -(BOOL)webView:(UIWebView *)webView shouldStartLoadWithRequest:(NSURLRequest *)request navigationType:(UIWebViewNavigationType)navigationType {
     
     [super webView:webView shouldStartLoadWithRequest:request navigationType:navigationType];
-
-    NSString *domainString = [[APIManager sharedManager] fetchmetaDataVariables:kDomainString];
     
-    if (domainString == nil) {
+    if (self.domainString == nil) {
         return NO;
     }
     
@@ -150,7 +150,7 @@
         return NO;
     }
     
-    if (![[request.URL absoluteString] containsString:domainString]) {
+    if (![[request.URL absoluteString] containsString:self.domainString]) {
         
         ExternalWebModalViewController *externalVC = [[ExternalWebModalViewController alloc] initWithRequest:request];
 
@@ -161,7 +161,7 @@
         return NO;
     }
 
-    if ([[request.URL absoluteString] containsString:domainString] &&
+    if ([[request.URL absoluteString] containsString:self.domainString] &&
          ![[request.URL absoluteString] isEqualToString:[[APIManager sharedManager] fetchmetaDataVariables: kURLString]] &&
         self.isFromSideMenu == NO) {
 
