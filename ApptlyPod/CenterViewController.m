@@ -27,7 +27,6 @@
 @property NSURLRequest *externalRequest;
 @property MMDrawerController *drawerController;
 @property ShareViewSlider *shareSlideUp;
-@property CGFloat scrollViewOffset;
 @property NSString *domainString;
 
 @end
@@ -204,32 +203,8 @@
     [self removeViewsFromWindow];
 }
 
-- (void)scrollViewWillBeginDragging:(UIScrollView *)scrollView {
-    self.scrollViewOffset = -scrollView.contentOffset.y;
-}
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    
-    CGFloat y = -scrollView.contentOffset.y;
-    
-    CGFloat minHeight = self.navigationController.navigationBar.height +
-    [UIApplication sharedApplication].statusBarFrame.size.height;
-    
-    if (y < self.scrollViewOffset && self.logoImageView.height > minHeight) {
-        CGFloat amountToMove = (self.scrollViewOffset - y) / 100;
-        
-        self.logoImageView.frame = CGRectMake(
-                                              self.logoImageView.frame.origin.x + (amountToMove / 2),
-                                              self.logoImageView.frame.origin.y,
-                                              self.logoImageView.width - amountToMove,
-                                              self.logoImageView.height - amountToMove
-                                              );
-    }
-}
-
 -(void)didReceiveMemoryWarning {
     [[NSURLCache sharedURLCache] removeAllCachedResponses];
 }
-
 
 @end

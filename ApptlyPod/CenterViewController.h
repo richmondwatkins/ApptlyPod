@@ -12,6 +12,7 @@
 @interface CenterViewController : APViewController
 
 @property BOOL isFromSideMenu;
+@property CGFloat scrollViewOffset;
 
 - (void)setRightNavigationItem;
 

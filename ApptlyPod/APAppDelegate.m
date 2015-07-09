@@ -22,13 +22,14 @@
 @implementation APAppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions withRootViewController:(CenterViewController *)viewController {
+    
     APIManager *projectSettings = [[APIManager sharedManager] initFromPlist];
     [projectSettings populateCoreData:self.managedObjectContext withCompletion:^(BOOL completion) {
         if (completion) {
             [[APIManager sharedManager] requestAppData:self.managedObjectContext];
-                [self setUpDrawerController];
-                
+            [self setUpDrawerController:viewController];
+            
                 [self checkForTwitter];
                 
                 [self setUpGooglePlus];
