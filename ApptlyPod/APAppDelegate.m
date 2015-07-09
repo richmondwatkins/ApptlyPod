@@ -62,12 +62,13 @@
     return YES;
 }
 
-- (void) setUpDrawerController {
+- (void) setUpDrawerController:(CenterViewController *)viewController {
     
     BOOL hasSocialAccounts = [[APIManager sharedManager] projectHasSocialAccounts];
     
     APSideMenuViewController *leftDrawer = [[APSideMenuViewController alloc] init];
-    CenterViewController *mainVC = [[CenterViewController alloc] init];
+    CenterViewController *mainVC = viewController == nil ?
+        [[CenterViewController alloc] init] : viewController;
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:mainVC];
     
     if (hasSocialAccounts) {
